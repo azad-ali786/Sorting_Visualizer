@@ -11,10 +11,10 @@
     <div class="slider"><h1>Sorting Visualizer</h1></div>
     <div class="container">
       <p class="title">Sorting Visualizer</p>
-      <div class="array-container"></div>
+      <div id="array_container" class="array-container"></div>
       <footer>
         <div class="array-inputs">
-          <button id="a_generate">Generate New Array!</button>
+          <button id="a_generate"><p>Generate New Array</p></button>
           <div class="size-of">
             <p>Size of the array</p>
             <input
@@ -27,7 +27,7 @@
             />
           </div>
           <div class="speed-of">
-            <p>Speed of the algorithm:</p>
+            <p>Speed of the algorithm</p>
             <input
               id="a_speed"
               type="range"
@@ -39,13 +39,14 @@
           </div>
         </div>
         <div class="algo">
-          <button>Bubble Sort</button>
-          <button>Insertion sort</button>
-          <button>Merge Sort</button>
-          <button>Quick Sort</button>
-          <button>Heap Sort</button>
+          <button><p>Bubble Sort</p></button>
+          <button><p>Insertion sort</p></button>
+          <button><p>Merge Sort</p></button>
+          <button><p>Quick Sort</p></button>
+          <button><p>Heap Sort</p></button>
         </div>
       </footer>
     </div>
+    <script src="./Js/main.js"></script>
   </body>
 </html>

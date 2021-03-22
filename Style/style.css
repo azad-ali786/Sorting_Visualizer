@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -7,6 +8,7 @@
 
 body {
   overflow: hidden;
+  font-family: "AlphaCentauri" !important;
 }
 
 @font-face {
@@ -18,6 +20,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1000;
   height: 100vh;
   width: 100%;
   display: -webkit-box;
@@ -87,15 +90,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   background: #ebe8e7;
-}
-
-.container .array-container div {
-  margin: 1px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .container footer {
@@ -130,7 +127,6 @@ body {
 }
 
 .container footer .array-inputs button {
-  background: transparent;
   border: 1px solid #bdc9bd;
   padding: 1em;
   border-radius: 12px;
@@ -198,10 +194,21 @@ body {
 }
 
 .container footer .algo button {
-  background: transparent;
   border: 1px solid #bdc9bd;
   padding: 1em;
   border-radius: 12px;
+}
+
+button {
+  background: transparent;
+}
+
+button:hover {
+  background: #ebe8e7;
+}
+
+button:hover p {
+  color: coral;
 }
 
 input[type="range"] {
