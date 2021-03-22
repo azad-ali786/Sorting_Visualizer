@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="slider"><h1>Sorting Visualizer</h1></div>
+    <div class="container">
+      <p class="title">Sorting Visualizer</p>
+      <div class="array-container"></div>
+      <footer>
+        <div class="array-inputs">
+          <button id="a_generate">Generate New Array!</button>
+          <div class="size-of">
+            <p>Size of the array</p>
+            <input
+              id="a_size"
+              type="range"
+              min="20"
+              max="150"
+              step="1"
+              value="80"
+            />
+          </div>
+          <div class="speed-of">
+            <p>Speed of the algorithm:</p>
+            <input
+              id="a_speed"
+              type="range"
+              min="1"
+              max="5"
+              step="1"
+              value="4"
+            />
+          </div>
+        </div>
+        <div class="algo">
+          <button>Bubble Sort</button>
+          <button>Insertion sort</button>
+          <button>Merge Sort</button>
+          <button>Quick Sort</button>
+          <button>Heap Sort</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
