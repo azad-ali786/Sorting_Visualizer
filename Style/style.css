@@ -199,7 +199,23 @@ body {
   border-radius: 12px;
 }
 
+.container footer .algo .butt-locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container footer .algo .butt-locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container footer .algo .butt-selected {
+  background: #e5c2c1;
+  color: white;
+}
+
 button {
+  cursor: pointer;
   background: transparent;
 }
 

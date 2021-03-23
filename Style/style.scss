@@ -110,11 +110,24 @@ body {
         padding: 1em;
         border-radius: 12px;
       }
+      .butt-locked {
+        background-color: transparent;
+        cursor: pointer;
+        &:hover {
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+      .butt-selected {
+        background: #e5c2c1;
+        color: white;
+      }
     }
   }
 }
 
 button {
+  cursor: pointer;
   background: transparent;
   &:hover {
     background: #ebe8e7;
