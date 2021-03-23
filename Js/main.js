@@ -5,8 +5,7 @@ var inp_gen = document.getElementById("a_generate");
 var inp_aspeed = document.getElementById("a_speed");
 //var array_speed=document.getElementById('a_speed').value;
 
-var butts_algos = document.querySelectorAll(".algo button p");
-
+var butts_algos = document.querySelectorAll(".algo button");
 var div_sizes = [];
 var divs = [];
 var margin_size;
