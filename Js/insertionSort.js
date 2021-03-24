@@ -4,7 +4,7 @@ function Insertion()
 
     for(var j=1;j<array_size;j++)
     {
-        div_update(divs[j],div_sizes[j],"yellow");
+        div_update(divs[j],div_sizes[j],"#D1A080");
 
         var key= div_sizes[j];
         var i=j-1;
