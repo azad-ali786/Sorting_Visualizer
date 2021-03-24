@@ -29,6 +29,9 @@ body {
   animation: slide 2s forwards 0.5s;
   font-family: "AlphaCentauri" i !important;
   font-size: 2em;
+  @media (max-width: 480px) {
+    font-size: 1em;
+  }
 }
 @keyframes slide {
   0% {
@@ -39,6 +42,7 @@ body {
   }
 }
 .container {
+  font-size: 0.75em;
   height: 100%;
   width: 100%;
   display: flex;
@@ -72,13 +76,16 @@ body {
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+
       button {
-        border: 1px solid #bdc9bd;
-        padding: 1em;
-        border-radius: 12px;
         flex: 1;
-        margin-left: 0.35em;
-        margin-right: 0.35em;
+        p {
+          @media (max-width: 480px) {
+            font-size: 0.65em;
+            padding: 0.01em;
+            border-radius: 4px;
+          }
+        }
       }
       .size-of {
         flex: 1;
@@ -86,8 +93,9 @@ body {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        margin-left: 0.35em;
-        margin-right: 0.35em;
+        @media (max-width: 480px) {
+          font-size: 0.45em;
+        }
       }
       .speed-of {
         display: flex;
@@ -95,8 +103,9 @@ body {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        margin-left: 0.35em;
-        margin-right: 0.35em;
+        @media (max-width: 480px) {
+          font-size: 0.45em;
+        }
       }
     }
     .algo {
@@ -105,11 +114,6 @@ body {
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      button {
-        border: 1px solid #bdc9bd;
-        padding: 1em;
-        border-radius: 12px;
-      }
       .butt-locked {
         background-color: transparent;
         cursor: pointer;
@@ -127,6 +131,9 @@ body {
 }
 
 button {
+  border-radius: 12px;
+  border: 1px solid #bdc9bd;
+  padding: 1em;
   cursor: pointer;
   background: transparent;
   &:hover {
@@ -134,6 +141,16 @@ button {
     p {
       color: coral;
     }
+  }
+  @media (max-width: 1024px) {
+    font-size: 1.25em;
+    padding: 0.25em;
+    border-radius: 8px;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.1em;
+    padding: 2px;
+    border-radius: 4px;
   }
 }
 
@@ -155,6 +172,9 @@ input[type="range"]::-webkit-slider-runnable-track {
   background: #bfd8d2;
   border-radius: 5px;
   border: 0px solid #ff7e3d;
+  @media (max-width: 480px) {
+    height: 6px;
+  }
 }
 input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0px 0px 0px #fefefe;
@@ -166,6 +186,10 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -2.5px;
+  @media (max-width: 480px) {
+    width: 1em;
+    height: 10px;
+  }
 }
 input[type="range"]:focus::-webkit-slider-runnable-track {
   background: #bfd8d2;
